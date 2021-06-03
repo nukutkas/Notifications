@@ -23,6 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func requestAutorisation() {
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             print("Permission granted: \(granted)")
+            
+            guard granted else { return }
+            self.getNotificationSetttings()
+        }
+    }
+    
+    func getNotificationSetttings() {
+        notificationCenter.getNotificationSettings { (settings) in
+            print("Notification settings: \(settings)")
         }
     }
 }
