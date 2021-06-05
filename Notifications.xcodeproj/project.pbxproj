@@ -54,8 +54,9 @@
 		A8217DDE20DBD56300895832 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				E592CB0E2669702A00968479 /* Supporting files */,
 				E592CB0C2669701700968479 /* Storyboards */,
+				E593645D266BEAFB00A1CC47 /* View Controllers */,
+				E592CB0E2669702A00968479 /* Supporting files */,
 				E592CB0D2669701E00968479 /* Source */,
 			);
 			path = Notifications;
@@ -82,10 +83,17 @@
 			isa = PBXGroup;
 			children = (
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
-				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
 				A8217DEB20DBD56400895832 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E593645D266BEAFB00A1CC47 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
