@@ -13,6 +13,7 @@
 		A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE820DBD56400895832 /* LaunchScreen.storyboard */; };
 		A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DF320DCAF4E00895832 /* TableViewController.swift */; };
 		E5936462266BFAAD00A1CC47 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5936461266BFAAD00A1CC47 /* Notifications.swift */; };
+		E5936467266C00DB00A1CC47 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = E5936466266C00DB00A1CC47 /* 144.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A8217DEB20DBD56400895832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8217DF320DCAF4E00895832 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E5936461266BFAAD00A1CC47 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		E5936466266C00DB00A1CC47 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		E592CB0D2669701E00968479 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E5936466266C00DB00A1CC47 /* 144.png */,
 				A8217DE620DBD56400895832 /* Assets.xcassets */,
 			);
 			path = Source;
@@ -169,6 +172,7 @@
 				A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */,
 				A8217DE720DBD56400895832 /* Assets.xcassets in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
+				E5936467266C00DB00A1CC47 /* 144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
