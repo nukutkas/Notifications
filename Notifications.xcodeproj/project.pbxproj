@@ -12,6 +12,7 @@
 		A8217DE720DBD56400895832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE620DBD56400895832 /* Assets.xcassets */; };
 		A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE820DBD56400895832 /* LaunchScreen.storyboard */; };
 		A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DF320DCAF4E00895832 /* TableViewController.swift */; };
+		E5936462266BFAAD00A1CC47 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5936461266BFAAD00A1CC47 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A8217DE920DBD56400895832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8217DEB20DBD56400895832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8217DF320DCAF4E00895832 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E5936461266BFAAD00A1CC47 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E592CB0C2669701700968479 /* Storyboards */,
 				E593645D266BEAFB00A1CC47 /* View Controllers */,
+				E5936460266BFA8500A1CC47 /* Services */,
 				E592CB0E2669702A00968479 /* Supporting files */,
 				E592CB0D2669701E00968479 /* Source */,
 			);
@@ -94,6 +97,14 @@
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E5936460266BFA8500A1CC47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E5936461266BFAAD00A1CC47 /* Notifications.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5936462266BFAAD00A1CC47 /* Notifications.swift in Sources */,
 				A8217DE020DBD56300895832 /* AppDelegate.swift in Sources */,
 				A8217DF420DCAF4E00895832 /* TableViewController.swift in Sources */,
 			);
