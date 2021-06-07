@@ -3,7 +3,6 @@
 //  Notifications
 //
 //  Created by Татьяна Кочетова on 05.06.2021.
-//  Copyright © 2021 Alexey Efimov. All rights reserved.
 //
 
 import UIKit
