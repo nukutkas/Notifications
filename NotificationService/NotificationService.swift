@@ -9,19 +9,24 @@
 import UserNotifications
 
 class NotificationService: UNNotificationServiceExtension {
-
+    
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
-
+    
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
-        if let bestAttemptContent = bestAttemptContent {
-            // Modify the notification content here...
-            bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
-            
-            contentHandler(bestAttemptContent)
+        guard let bestAttemptContent = bestAttemptContent,
+              let apsData = bestAttemptContent.userInfo["aps"] as? [String: Any],
+              let attachmentURLAsString = apsData["attachment-url"] as? String,
+              let attachmentURL = URL(string: attachmentURLAsString) else {return}
+        
+        downloadImageFrom(url: attachmentURL) { (attachment) in
+            if attachment != nil {
+                bestAttemptContent.attachments = [attachment!]
+                contentHandler(bestAttemptContent)
+            }
         }
     }
     
