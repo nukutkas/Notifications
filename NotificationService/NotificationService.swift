@@ -32,5 +32,31 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
+}
 
+//MARK: - Helper Functions
+extension NotificationService {
+    
+    private func downloadImageFrom(url: URL, with completionHandler: @escaping(UNNotificationAttachment?) -> Void) {
+        
+        let task = URLSession.shared.downloadTask(with: url) { (downloadUrl, response, error) in
+            guard let downloadUrl = downloadUrl else {
+                completionHandler(nil)
+                return
+            }
+            
+            var urlPath = URL(fileURLWithPath: NSTemporaryDirectory())
+            
+            let uniqueURLEnding = ProcessInfo.processInfo.globallyUniqueString + ".png"
+            urlPath = urlPath.appendingPathComponent(uniqueURLEnding)
+            try? FileManager.default.moveItem(at: downloadUrl, to: urlPath)
+            do {
+                let attachment = try UNNotificationAttachment(identifier: "144", url: urlPath, options: nil)
+                completionHandler(attachment)
+            } catch {
+                completionHandler(nil)
+            }
+        }
+        task.resume()
+    }
 }
