@@ -38,7 +38,6 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         let content = UNMutableNotificationContent()
         let userAction = "User Action"
         
-        
         content.title = notificationType
         content.body =  "This is example how to create " + notificationType
         content.sound = .default
