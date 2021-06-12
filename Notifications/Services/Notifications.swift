@@ -7,10 +7,13 @@
 
 import UIKit
 import UserNotifications
+import Firebase
 
-class Notifications: NSObject, UNUserNotificationCenterDelegate {
+class Notifications: NSObject, UNUserNotificationCenterDelegate, MessagingDelegate {
     
     let notificationCenter = UNUserNotificationCenter.current()
+    
+    let messagingDelegate = Messaging.messaging()
 
     func requestAutorization() {
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
