@@ -9,7 +9,7 @@ import UIKit
 import UserNotifications
 import Firebase
 
-class Notifications: NSObject, UNUserNotificationCenterDelegate, MessagingDelegate {
+class Notifications: NSObject, UNUserNotificationCenterDelegate {
     
     let notificationCenter = UNUserNotificationCenter.current()
     
@@ -115,4 +115,12 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate, MessagingDelega
         
         completionHandler()
     }
+}
+
+extension Notifications: MessagingDelegate {
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        print("\nFirebase registration token: \(fcmToken ?? "")\n")
+    }
+    
 }
