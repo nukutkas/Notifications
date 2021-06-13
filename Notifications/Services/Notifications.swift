@@ -122,5 +122,4 @@ extension Notifications: MessagingDelegate {
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         print("\nFirebase registration token: \(fcmToken ?? "")\n")
     }
-    
 }
