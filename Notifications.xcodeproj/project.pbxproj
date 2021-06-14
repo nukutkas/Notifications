@@ -18,6 +18,7 @@
 		E5936467266C00DB00A1CC47 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = E5936466266C00DB00A1CC47 /* 144.png */; };
 		E5DB69F326778DBA006EFD08 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = E5DB69F126778DBA006EFD08 /* Screenshot01.png */; };
 		E5DB69F826778DD5006EFD08 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = E5DB69F726778DD5006EFD08 /* Screenshot02.png */; };
+		E5DB69FB26778EBC006EFD08 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5DB69FA26778EBC006EFD08 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		E597B8FA267001350022B65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5DB69F126778DBA006EFD08 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 		E5DB69F726778DD5006EFD08 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		E5DB69FA26778EBC006EFD08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		A8217DDE20DBD56300895832 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				E5DB69FA26778EBC006EFD08 /* README.md */,
 				E5832958266CDD3D00CFDB07 /* Notifications.entitlements */,
 				E592CB0C2669701700968479 /* Storyboards */,
 				E593645D266BEAFB00A1CC47 /* View Controllers */,
@@ -246,6 +249,7 @@
 				E58AFFD22672A56600933A06 /* GoogleService-Info.plist in Resources */,
 				E5DB69F826778DD5006EFD08 /* Screenshot02.png in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
+				E5DB69FB26778EBC006EFD08 /* README.md in Resources */,
 				E5936467266C00DB00A1CC47 /* 144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
